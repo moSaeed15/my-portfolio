@@ -1,3 +1,5 @@
+import { spec } from 'node:test/reporters';
+
 export const navItems = [
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
@@ -8,23 +10,26 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: 'Creating User-Centric Frontend Applications',
-    description: '',
-    className: 'lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]',
+    title: `Welcome to My Portfolio Where Ideas Take Shape `,
+    description: `When I'm not busy building  a new web app, you'll find me exploring the latest tech trends or fine-tuning my existing skills to stay ahead in the ever-evolving field of frontend development. My journey in tech has been fueled by a love for continuous learning and a drive to innovate. Whether it's mastering a new JavaScript framework or optimizing a user experience and perfomance 
+    , I thrive on challenges and the opportunity to make digital interactions seamless and intuitive.`,
+    className:
+      'lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative -pb-1',
     imgClassName: 'w-full h-full',
     titleClassName: 'justify-end',
-    img: '/b1.svg',
+    // img: '/b1.svg',
     spareImg: '',
+    specialText: 'and Code Comes to Life!',
   },
   {
     id: 2,
-    title: 'Passionate About Modern Web Development',
+    title: 'Skilled in Integrating Frontend with Backend APIs',
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
     imgClassName: '',
     titleClassName: 'justify-start',
-    img: '',
-    spareImg: '',
+    img: '/grid.svg',
+    spareImg: '/b4.svg',
   },
   {
     id: 3,
@@ -37,16 +42,7 @@ export const gridItems = [
     img: '',
     spareImg: '',
   },
-  {
-    id: 4,
-    title: 'Skilled in Integrating Frontend with Backend APIs',
-    description: '',
-    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
-    imgClassName: '',
-    titleClassName: 'justify-start',
-    img: '/grid.svg',
-    spareImg: '/b4.svg',
-  },
+
   {
     id: 5,
     title: 'Proactive in Learning New Technologies',
@@ -59,7 +55,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: 'Interested in Full-Stack Engineering',
+    title: 'Interested in my Work? Let’s Connect!',
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
     imgClassName: '',
@@ -118,7 +114,7 @@ export const workExperience = [
     title: 'Junior Fullstack Developer',
     desc: 'Developed a cybersecurity report generation website using React and Laravel.',
     className: 'md:col-span-2',
-    thumbnail: '/exp2.png',
+    thumbnail: '/exp2.svg',
   },
   {
     id: 3,

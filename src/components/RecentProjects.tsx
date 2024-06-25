@@ -5,10 +5,10 @@ import Card from './Card';
 const RecentProjects = () => {
   return (
     <div className="py-20">
-      <h1 className="heading">
+      <h2 className="heading">
         A small selection of{' '}
         <span className="text-purple"> recent projects</span>
-      </h1>
+      </h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-44 gap-y-16 mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div

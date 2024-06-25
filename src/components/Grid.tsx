@@ -17,6 +17,7 @@ const Grid = () => {
               imgClassName,
               titleClassName,
               spareImg,
+              specialText,
             },
             index
           ) => (
@@ -30,6 +31,7 @@ const Grid = () => {
               imgClassName={imgClassName}
               titleClassName={titleClassName}
               spareImg={spareImg}
+              specialText={specialText}
             />
           )
         )}

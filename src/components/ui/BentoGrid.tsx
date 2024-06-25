@@ -43,6 +43,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  specialText,
 }: {
   className?: string;
   id: number;
@@ -52,6 +53,7 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  specialText?: string;
 }) => {
   const leftLists = ['ReactJS', 'Express', 'Typescript'];
   const rightLists = ['VueJS', 'NuxtJS', 'GraphQL'];
@@ -118,26 +120,63 @@ export const BentoGridItem = ({
           </BackgroundGradientAnimation>
         )}
 
+        {id === 1 && (
+          <div className="">
+            <h3
+              className={`ml-5 mt-5 font-sans text-lg lg:text-3xl font-bold z-10 max-w-[45ch]`}
+            >
+              {title} <span className="text-purple">{specialText}</span>
+            </h3>
+            <h2 className={`ml-5 mt-5 font-sans text-lg  font-bold z-10 `}>
+              My name is Mohammed El Saeed, a passionate Frontend Engineer
+              committed to creating engaging and efficient user interfaces.
+            </h2>
+            <p
+              className={` ml-5 mt-5 font-sans  lg:text-base text-sm  z-10  max-w-prose text-white-200  font-medium leading-7 md:leading-8`}
+            >
+              {description}
+            </p>
+            <p className="ml-5 mt-5 font-sans  lg:text-base text-sm  z-10  max-w-prose text-white-200  font-medium leading-7 md:leading-8">
+              Currently, I am open to full-time opportunities where I can
+              contribute my skills to dynamic teams and impactful projects. I am
+              also available for freelance work, eager to collaborate on
+              creative and challenging web projects. If you need a dedicated
+              professional to bring your digital vision to life, let&apos;s
+              discuss how we can work together. Feel free to explore my
+              portfolio to see the projects I&apos;ve been a part of and how I
+              can help you achieve your goals.
+            </p>
+            <p className="ml-5 mt-5 font-sans  lg:text-base text-sm  z-10  max-w-prose text-white  font-medium leading-7 md:leading-8">
+              Thanks for stopping by, and I look forward to connecting with you
+              soon!
+            </p>
+          </div>
+        )}
+
         <div
           className={cn(
             titleClassName,
-            'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10'
+            'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full  flex flex-col px-5 p-5 lg:p-10 '
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
+          {id !== 1 && (
+            <div className={`font-sans  lg:text-base text-sm  z-10 `}>
+              {description}
+            </div>
+          )}
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
-          <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-          >
-            {title}
-          </div>
+          {id !== 1 && (
+            <div
+              className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            >
+              {title}
+            </div>
+          )}
 
           {/* for the github 3d globe */}
-          {id === 2 && <GlobeDemo />}
+          {/* {id === 2 && <GlobeDemo />} */}
 
           {/* Tech stack list div */}
           {id === 3 && (
