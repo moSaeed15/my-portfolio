@@ -3,27 +3,26 @@ import { FaLocationArrow } from 'react-icons/fa6';
 import { socialMedia } from '@/data';
 import { Navigation } from 'lucide-react';
 import MagicButton from './ui/MagicButton';
+import Contact from './Contact';
 
 const Footer = () => {
   return (
     <footer className="w-full mb-[100px] pb-10" id="contact">
-      <div className="flex flex-col items-center">
-        <h2 className="heading lg:max-w-[45vw]">
-          Ready to enhance/create <span className="text-purple">your</span> web
-          experience?
-        </h2>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          I&apos;m currently seeking full-time opportunities as a Frontend
-          Engineer and am also open to freelance projects. Let&apos;s connect
-          and discuss how my skills can help your company grow.
-        </p>
-        <a href="mailto:contact@jsmastery.pro">
-          <MagicButton
-            title="Get in Touch."
-            icon={<Navigation />}
-            position="right"
-          />
-        </a>
+      <div className="flex justify-center relative my-20 z-10 gap-16 flex-col lg:flex-row items-center">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <h2 className="heading lg:max-w-[50vw]">
+            Ready to create <span className="text-purple">your </span>
+            web experience?
+          </h2>
+          <p className="text-white-200 md:mt-10 my-5 max-w-[50vw]">
+            I&apos;m currently seeking full-time opportunities as a Frontend
+            Engineer and am also open to freelance projects. Let&apos;s connect
+            and discuss how my skills can help your company grow.
+          </p>
+        </div>
+        <div className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] mb-10">
+          <Contact />
+        </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">

@@ -29,7 +29,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10 gap-10">
+      <div className="flex justify-center relative my-20 z-10 gap-10 flex-col lg:flex-row items-center">
         <div className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] mb-10">
           <img
             src="/Avatar.jpg"
