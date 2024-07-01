@@ -1,5 +1,3 @@
-import { FaLocationArrow } from 'react-icons/fa6';
-
 import { socialMedia } from '@/data';
 import { Navigation } from 'lucide-react';
 import MagicButton from './ui/MagicButton';
