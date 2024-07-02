@@ -5,7 +5,7 @@ import Contact from './Contact';
 
 const Footer = () => {
   return (
-    <footer className="w-full mb-[100px] pb-10" id="contact">
+    <footer className="w-full mb-[100px] " id="contact">
       <div className="flex justify-center relative my-20 z-10 gap-16 flex-col lg:flex-row items-center">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="heading lg:max-w-[50vw]">

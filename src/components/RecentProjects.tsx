@@ -11,12 +11,13 @@ const RecentProjects = () => {
       </h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-60 gap-y-32 mt-10">
         {projects.map(
-          ({ id, title, des, img, iconLists, link, websiteLink }) => (
+          ({ id, title, des, img, iconLists, link, websiteLink, gallery }) => (
             <div
               key={id}
               className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             >
               <Card
+                gallery={gallery}
                 title={title}
                 des={des}
                 img={img}
