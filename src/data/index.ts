@@ -28,7 +28,7 @@ export const gridItems = [
     className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
     imgClassName: '',
     titleClassName: 'justify-start',
-    img: '/grid.svg',
+    img: '/grid.webp',
     spareImg: '/b4.svg',
   },
   {
@@ -51,13 +51,13 @@ export const gridItems = [
     imgClassName: 'absolute right-0 bottom-0 md:w-96 w-60',
     titleClassName: 'justify-center md:justify-start lg:justify-center',
     img: '/b5.svg',
-    spareImg: '/grid.svg',
+    spareImg: '/grid.webp',
   },
   {
     id: 6,
     title: 'Interested in my Work? Let’s Connect!',
     description: '',
-    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
+    className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
     imgClassName: '',
     titleClassName: 'justify-center md:max-w-full max-w-60 text-center',
     img: '',
@@ -68,19 +68,21 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: 'Event Booking/Creation Website',
-    des: 'A React-based platform for managing events with dynamic filtering and authentication.',
-    img: '/p1.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
-    link: 'https://github.com/your-profile/event-booking-website',
+    title: 'Game Data Dashboard',
+    des: 'A Next.js dashboard for game data with user authentication and data filtering.',
+    img: '/maze.webp',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
+    link: 'https://github.com/moSaeed15/cogniverse',
+    websiteLink: 'https://cogniverse-rho.vercel.app/',
   },
   {
     id: 2,
-    title: 'Game Data Dashboard',
-    des: 'A Next.js dashboard for game data with user authentication and data filtering.',
-    img: '/p2.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
-    link: 'https://github.com/your-profile/game-data-dashboard',
+    title: 'Event Booking/Creation Website',
+    des: 'A React-based platform for managing events with dynamic filtering and authentication.',
+    img: '/landing.webp',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
+    link: 'https://github.com/your-profile/event-booking-website',
+    websiteLink: '',
   },
   {
     id: 3,
@@ -89,6 +91,7 @@ export const projects = [
     img: '/p3.svg',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
     link: 'https://github.com/your-profile/property-management-website',
+    websiteLink: '',
   },
   {
     id: 4,
@@ -97,24 +100,25 @@ export const projects = [
     img: '/p4.svg',
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
     link: 'https://github.com/adrianhajdin/iphone',
+    websiteLink: '',
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
+    title: 'Junior Fullstack Developer',
+    desc: 'Developed a cybersecurity report generation website using React and Laravel.',
+    className: 'md:col-span-2',
+    thumbnail: '/exp2.svg',
+  },
+  {
+    id: 2,
     title: 'Frontend Engineer Intern',
     desc: 'Created Production level web application using React.js in an agile environment.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
     companyLogo: '/link-logo.png',
-  },
-  {
-    id: 2,
-    title: 'Junior Fullstack Developer',
-    desc: 'Developed a cybersecurity report generation website using React and Laravel.',
-    className: 'md:col-span-2',
-    thumbnail: '/exp2.svg',
   },
   {
     id: 3,

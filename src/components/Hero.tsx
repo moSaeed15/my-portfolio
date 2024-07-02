@@ -30,21 +30,21 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10 gap-10 flex-col lg:flex-row items-center">
-        <div className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] mb-10">
+        <div className="w-3/4  max-w-[400px] md:max-w-[600px] lg:max-w-[800px] mb-10">
           <img
-            src="/Avatar.jpg"
+            src="/Avatar.webp"
             alt="Hero Image"
             className="w-full h-auto object-cover rounded-lg shadow-lg"
           />
         </div>
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center  w-full">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 ">
             Creating Dynamic Web Experiences
           </p>
 
           <TextGenerateEffect
             words="Transforming Ideas into High-Performance Web Applications"
-            className="text-center text-[40px] sm:text-3xl md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] sm:text-3xl md:text-5xl "
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">

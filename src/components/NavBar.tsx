@@ -10,7 +10,7 @@ const NavBar = () => {
             My Projects
           </li>
         </a>
-        <a href="#Experience">
+        <a href="#experience">
           <li className="hover:opacity-50 duration-150 transition-opacity">
             My Experience
           </li>

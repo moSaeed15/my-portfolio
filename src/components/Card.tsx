@@ -5,40 +5,51 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
 
-const Card = () => {
+interface Props {
+  title: string;
+  des: string;
+  img: string;
+  iconLists: string[];
+  link: string;
+  websiteLink: string;
+}
+
+const Card = ({ title, des, img, iconLists, link, websiteLink }: Props) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-gray-50 relative group/card   dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto lg:sm:w-[35rem] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white flex justify-between w-full mb-10"
+          className="px-5 text-xl font-bold text-neutral-600 dark:text-white flex items-center justify-between w-full mb-10"
         >
-          Make things float in air{' '}
-          <Image
-            src="git.svg"
-            height="50"
-            width="50"
-            alt="source code"
-            className="absolute right-0 top-0"
-          />
+          {title}
+          <Link href={link} target="__blank">
+            <Image
+              src="git.svg"
+              height="50"
+              width="50"
+              alt="source code"
+              className="absolute right-2 -top-2"
+            />
+          </Link>
         </CardItem>
 
         <CardItem translateZ="100" className="w-full mt-4 relative">
           <Image
-            src="p1.svg"
+            src={img}
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            quality={100}
+            className="h-72 w-full object-top object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500  max-w-sm mt-2 dark:text-neutral-300 ml-2"
+          className="text-neutral-500  text-base mt-2 dark:text-neutral-300 ml-2"
         >
-          A React-based platform for managing events with dynamic filtering and
-          authentication
+          {des}
         </CardItem>
         <div className="flex justify-between items-center mt-20">
           <CardItem
@@ -48,15 +59,17 @@ const Card = () => {
           >
             View Gallery
           </CardItem>
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href="https://twitter.com/mannupaaji"
-            target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-          >
-            <ExternalLink />
-          </CardItem>
+          {websiteLink !== '' && (
+            <CardItem
+              translateZ={20}
+              as={Link}
+              href={websiteLink}
+              target="__blank"
+              className=" relative z-50 px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+            >
+              <ExternalLink />
+            </CardItem>
+          )}
         </div>
       </CardBody>
     </CardContainer>

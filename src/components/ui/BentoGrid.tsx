@@ -54,8 +54,8 @@ export const BentoGridItem = ({
   spareImg?: string;
   specialText?: string;
 }) => {
-  const leftLists = ['ReactJS', 'Express', 'Typescript'];
-  const rightLists = ['VueJS', 'NuxtJS', 'GraphQL'];
+  const leftLists = ['ReactJS', 'Next.js', 'Typescript'];
+  const rightLists = ['HTML', 'Tailwind', 'CSS'];
 
   const [copied, setCopied] = useState(false);
 
@@ -160,7 +160,9 @@ export const BentoGridItem = ({
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
           {id !== 1 && (
-            <div className={`font-sans  lg:text-base text-sm  z-10 `}>
+            <div
+              className={`font-sans  lg:text-base text-sm  z-10 max-w-[28ch]`}
+            >
               {description}
             </div>
           )}
@@ -193,7 +195,7 @@ export const BentoGridItem = ({
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 mr-2">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
