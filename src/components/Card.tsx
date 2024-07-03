@@ -4,6 +4,7 @@ import { CardBody, CardContainer, CardItem } from './ui/3DCard';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
+import GalleryModal from './GalleryModal';
 
 interface Props {
   title: string;
@@ -12,12 +13,21 @@ interface Props {
   iconLists: string[];
   link: string;
   websiteLink: string;
+  gallery: string[];
 }
 
-const Card = ({ title, des, img, iconLists, link, websiteLink }: Props) => {
+const Card = ({
+  title,
+  des,
+  img,
+  iconLists,
+  link,
+  websiteLink,
+  gallery,
+}: Props) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card   dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto lg:sm:w-[35rem] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-gray-50 relative group/card   dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[rgb(4,7,29)] dark:border-white/[0.2] border-black/[0.1] w-auto lg:sm:w-[35rem] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
           className="px-5 text-xl font-bold text-neutral-600 dark:text-white flex items-center justify-between w-full mb-10"
@@ -52,20 +62,14 @@ const Card = ({ title, des, img, iconLists, link, websiteLink }: Props) => {
           {des}
         </CardItem>
         <div className="flex justify-between items-center mt-20">
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            View Gallery
-          </CardItem>
+          <GalleryModal gallery={gallery} />
           {websiteLink !== '' && (
             <CardItem
               translateZ={20}
               as={Link}
               href={websiteLink}
               target="__blank"
-              className=" relative z-50 px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+              className=" relative z-40 px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
             >
               <ExternalLink />
             </CardItem>

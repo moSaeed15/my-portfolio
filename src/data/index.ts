@@ -73,7 +73,11 @@ export const projects = [
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
     link: 'https://github.com/moSaeed15/cogniverse',
     websiteLink: 'https://cogniverse-rho.vercel.app/',
-    gallery: ['', ''],
+    gallery: [
+      '/cogniverse/focus.webp',
+      '/cogniverse/maze.webp',
+      '/cogniverse/login.webp',
+    ],
   },
   {
     id: 2,
@@ -84,7 +88,11 @@ export const projects = [
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
     link: 'https://github.com/moSaeed15/tessera-frontend',
     websiteLink: '',
-    gallery: ['', ''],
+    gallery: [
+      '/event/event-login.webp',
+      '/event/modal.webp',
+      '/event/landing.webp',
+    ],
   },
   {
     id: 3,
@@ -94,7 +102,12 @@ export const projects = [
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
     link: 'https://github.com/moSaeed15/Picnic-Webapp',
     websiteLink: '',
-    gallery: ['', ''],
+    gallery: [
+      '/picnic/admin-ar.webp',
+      '/picnic/admin.webp',
+      '/picnic/base.webp',
+      '/picnic/main.webp',
+    ],
   },
   {
     id: 4,
@@ -104,7 +117,13 @@ export const projects = [
     iconLists: ['/html.svg', '/sass.svg', '/js.svg'],
     link: 'https://github.com/mosaeed15/audiophile',
     websiteLink: 'https://mosaeed15.github.io/audiophile/',
-    gallery: ['', ''],
+    gallery: [
+      '/audio/home.webp',
+      '/audio/product.webp',
+      '/audio/checkout.webp',
+      '/audio/cart.webp',
+      '/audio/checkout-modal.webp',
+    ],
   },
 ];
 
