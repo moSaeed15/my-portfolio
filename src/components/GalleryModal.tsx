@@ -10,6 +10,7 @@ interface Props {
 
 const GalleryModal = ({ gallery }: Props) => {
   const [show, setShow] = useState<boolean>(false);
+  const [loaded, setLoaded] = useState<boolean[]>([]);
 
   useEffect(() => {
     const closeGallery = (e: KeyboardEvent) => {
@@ -33,12 +34,23 @@ const GalleryModal = ({ gallery }: Props) => {
     };
   }, [show]);
 
+  const handleImageLoad = (index: number) => {
+    setLoaded(prev => {
+      const newLoaded = [...prev];
+      newLoaded[index] = true;
+      return newLoaded;
+    });
+  };
+
   return (
     <>
       <CardItem
         translateZ={20}
         as="button"
-        onClick={() => setShow(prev => !prev)}
+        onClick={() => {
+          setShow(prev => !prev);
+          setLoaded(new Array(gallery.length).fill(false)); // Reset loading state
+        }}
         className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
       >
         View Gallery
@@ -65,14 +77,21 @@ const GalleryModal = ({ gallery }: Props) => {
 
               <div className="grid grid-cols-2 gap-5 mt-10">
                 {gallery.map((img, idx) => (
-                  <Image
-                    width={1500}
-                    height={1000}
-                    key={idx}
-                    src={img}
-                    alt="gallery"
-                    className={`w-full object-cover`}
-                  />
+                  <div key={idx} className="relative">
+                    {!loaded[idx] && (
+                      <div className="absolute inset-0 bg-gray-300 animate-pulse" />
+                    )}
+                    <Image
+                      width={1500}
+                      height={1000}
+                      src={img}
+                      alt="gallery"
+                      className={`w-full object-cover ${
+                        !loaded[idx] ? 'opacity-0' : 'opacity-100'
+                      } transition-opacity duration-300`}
+                      onLoadingComplete={() => handleImageLoad(idx)}
+                    />
+                  </div>
                 ))}
               </div>
             </div>
