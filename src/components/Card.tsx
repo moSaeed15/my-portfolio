@@ -32,14 +32,14 @@ const Card = ({
           translateZ="50"
           className="px-5 text-xl font-bold text-neutral-600 dark:text-white flex items-center justify-between w-full mb-10"
         >
-          <span className="max-w-[20ch] sm:max-w-full">{title}</span>
+          <span className="max-w-[17ch] sm:max-w-full">{title}</span>
           <Link href={link} target="__blank">
             <Image
               src="git.svg"
               height="50"
               width="50"
               alt="source code"
-              className="absolute right-2 -top-2"
+              className="w-10 sm:w-12 absolute right-1 -top-1 sm:right-2 sm:-top-2"
             />
           </Link>
         </CardItem>
