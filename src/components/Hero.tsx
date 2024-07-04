@@ -58,7 +58,7 @@ const Hero = () => {
                 position="right"
               />
             </a>
-            <a href="" target="_blank">
+            <a href="/Mohammed_El Saeed_resume.pdf" target="_blank">
               <MagicButton
                 title="My Resume"
                 icon={<FileText />}
