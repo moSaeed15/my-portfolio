@@ -142,14 +142,14 @@ export const workExperience = [
   {
     id: 1,
     title: 'Junior Fullstack Developer',
-    desc: 'Developed a cybersecurity report generation website using React and Laravel. Created 5+ interactive pages with table views and forms, implementing robust validation. Developed backend endpoints for CRUD operations and integrated the project using GitHub for version control.',
+    desc: 'Built a cybersecurity report generation site with React and Laravel. Created 5+ interactive pages with forms and table views. Developed CRUD backend endpoints and used GitHub for version control.',
     className: 'md:col-span-2',
     thumbnail: '/zinad.svg',
   },
   {
     id: 2,
     title: 'Frontend Engineer Intern',
-    desc: 'Created Production level web application using React.js in an agile environment.',
+    desc: 'Developed a production-level web app using React.js in an agile setting.',
     className: 'md:col-span-2',
     thumbnail: '/link-logo.svg',
     companyLogo: '/',
@@ -157,8 +157,8 @@ export const workExperience = [
   {
     id: 3,
     title: 'Freelance Frontend Dev Project',
-    desc: 'Led the development of a property management website using React, implementing complex form handling and a booking calendar system. Designed an admin dashboard with property insights and multilingual support, and developed role-based authentication for distinct user access rights.',
-    className: 'md:col-span-2', // change to md:col-span-2
+    desc: 'Led the creation of a property management site with React. Implemented form handling, booking calendar, admin dashboard, multilingual support, and role-based authentication.',
+    className: 'md:col-span-2',
     thumbnail: '/picnic-logo.svg',
   },
 ];
@@ -167,13 +167,17 @@ export const socialMedia = [
   {
     id: 1,
     img: '/git.svg',
+    //link to social
+    link: 'https://github.com/moSaeed15',
   },
   {
     id: 2,
     img: '/twit.svg',
+    link: 'https://x.com/Mohsaeed_',
   },
   {
     id: 3,
     img: '/link.svg',
+    link: 'https://www.linkedin.com/in/mohammed-el-saeed/',
   },
 ];
