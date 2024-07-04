@@ -58,14 +58,14 @@ const GalleryModal = ({ gallery }: Props) => {
       {show && (
         <ReactPortal wrapperID="react-portal-modal-container">
           <div
-            className="fixed inset-0 z-40 bg-black bg-opacity-60 flex items-center justify-center"
+            className="fixed inset-0 z-40 bg-black bg-opacity-60 flex sm:items-center sm:justify-center "
             onClick={() => setShow(false)}
           >
             {/* Invisible layer to ensure the modal is centered */}
 
             {/* Modal Content */}
             <div
-              className="relative z-50 bg-[rgb(4,7,29)]  text-black w-full max-w-6xl mx-4 p-6 rounded shadow-lg overflow-y-scroll max-h-[80vh]"
+              className="relative z-50 bg-[rgb(4,7,29)]  text-black w-full max-w-6xl  p-6 rounded shadow-lg overflow-y-scroll sm:max-h-[80vh] mx-10 sm:mx-4 my-20 sm:my-0"
               onClick={e => e.stopPropagation()}
             >
               <button

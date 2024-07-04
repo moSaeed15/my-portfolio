@@ -32,7 +32,7 @@ const Card = ({
           translateZ="50"
           className="px-5 text-xl font-bold text-neutral-600 dark:text-white flex items-center justify-between w-full mb-10"
         >
-          {title}
+          <span className="max-w-[20ch] sm:max-w-full">{title}</span>
           <Link href={link} target="__blank">
             <Image
               src="git.svg"
