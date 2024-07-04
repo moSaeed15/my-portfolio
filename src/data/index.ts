@@ -69,8 +69,8 @@ export const projects = [
     id: 1,
     title: 'Game Data Dashboard',
     des: 'A Next.js dashboard for game data with user authentication and data filtering.',
-    img: '/maze.webp',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
+    img: '/cogniverse/maze.webp',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/firebase.svg'],
     link: 'https://github.com/moSaeed15/cogniverse',
     websiteLink: 'https://cogniverse-rho.vercel.app/',
     gallery: [
@@ -81,36 +81,6 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Event Booking/Creation Website',
-    des: 'A React-based platform for managing events with dynamic filtering and authentication.',
-    img: '/landing.webp',
-
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
-    link: 'https://github.com/moSaeed15/tessera-frontend',
-    websiteLink: '',
-    gallery: [
-      '/event/event-login.webp',
-      '/event/modal.webp',
-      '/event/landing.webp',
-    ],
-  },
-  {
-    id: 3,
-    title: 'Property Management Website',
-    des: 'A React-based site for property management with form handling and booking system.',
-    img: '/picnic/main.webp',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
-    link: 'https://github.com/moSaeed15/Picnic-Webapp',
-    websiteLink: '',
-    gallery: [
-      '/picnic/admin-ar.webp',
-      '/picnic/admin.webp',
-      '/picnic/base.webp',
-      '/picnic/main.webp',
-    ],
-  },
-  {
-    id: 4,
     title: 'Audiophile E-commerce Website',
     des: 'Multi-page site using HTML, Sass, and vanilla JS from a Figma design. Includes landing, product, and checkout pages with modals and cart functionality.',
     img: '/audio/home.webp',
@@ -125,30 +95,61 @@ export const projects = [
       '/audio/checkout-modal.webp',
     ],
   },
+  {
+    id: 3,
+    title: 'Property Management Website',
+    des: 'A React-based site for property management with form handling and booking system.',
+    img: '/picnic/main.webp',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/chakra.svg'],
+    link: 'https://github.com/moSaeed15/Picnic-Webapp',
+    websiteLink: '',
+    gallery: [
+      '/picnic/admin-ar.webp',
+      '/picnic/admin.webp',
+      '/picnic/base.webp',
+      '/picnic/main.webp',
+    ],
+  },
+
+  {
+    id: 4,
+    title: 'Event Booking/Creation Website',
+    des: 'A React-based platform for managing events with dynamic filtering and authentication.',
+    img: '/event/landing.webp',
+
+    iconLists: ['/re.svg', '/styled.svg'],
+    link: 'https://github.com/moSaeed15/tessera-frontend',
+    websiteLink: '',
+    gallery: [
+      '/event/event-login.webp',
+      '/event/modal.webp',
+      '/event/landing.webp',
+    ],
+  },
 ];
 
 export const workExperience = [
   {
     id: 1,
     title: 'Junior Fullstack Developer',
-    desc: 'Developed a cybersecurity report generation website using React and Laravel.',
+    desc: 'Developed a cybersecurity report generation website using React and Laravel. Created 5+ interactive pages with table views and forms, implementing robust validation. Developed backend endpoints for CRUD operations and integrated the project using GitHub for version control.',
     className: 'md:col-span-2',
-    thumbnail: '/exp2.svg',
+    thumbnail: '/zinad-logo.png',
   },
   {
     id: 2,
     title: 'Frontend Engineer Intern',
     desc: 'Created Production level web application using React.js in an agile environment.',
     className: 'md:col-span-2',
-    thumbnail: '/exp1.svg',
-    companyLogo: '/link-logo.png',
+    thumbnail: '/link-logo.svg',
+    companyLogo: '/',
   },
   {
     id: 3,
     title: 'Freelance Frontend Dev Project',
-    desc: 'Led the development of a property management website for a client, implementing complex form handling and a booking calendar system.',
+    desc: 'Led the development of a property management website using React, implementing complex form handling and a booking calendar system. Designed an admin dashboard with property insights and multilingual support, and developed role-based authentication for distinct user access rights.',
     className: 'md:col-span-2', // change to md:col-span-2
-    thumbnail: '/exp3.svg',
+    thumbnail: '/picnic-logo.svg',
   },
 ];
 

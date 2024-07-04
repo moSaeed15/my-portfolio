@@ -26,6 +26,7 @@ const config = {
       },
     },
     extend: {
+      screens: { '2xmd': '1120px', xmd: '1055px' },
       colors: {
         black: {
           DEFAULT: '#000',

@@ -7,19 +7,22 @@ const Footer = () => {
   return (
     <footer className="w-full mb-[100px] " id="contact">
       <div className="flex justify-center relative my-20 z-10 gap-16 flex-col lg:flex-row items-center">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="heading lg:max-w-[50vw]">
-            Ready to create <span className="text-purple">your </span>
-            web experience?
-          </h2>
-          <p className="text-white-200 md:mt-10 my-5 max-w-[50vw]">
-            I&apos;m currently seeking full-time opportunities as a Frontend
-            Engineer and am also open to freelance projects. Let&apos;s connect
-            and discuss how my skills can help your company grow.
+        <div className="flex flex-col items-center">
+          <h1 className="heading lg:max-w-[45vw]">
+            Ready to take <span className="text-purple">your</span> digital
+            presence to the next level?
+          </h1>
+          <p className="text-white-200 md:mt-10 my-5 text-center">
+            Reach out to me today and let&apos;s discuss how I can help you
+            achieve your goals.
           </p>
-        </div>
-        <div className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] mb-10">
-          <Contact />
+          <a href="mailto:mohammed.elsaeed1@gmail.com">
+            <MagicButton
+              title="Let's get in touch"
+              icon={<Navigation />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
