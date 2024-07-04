@@ -50,7 +50,7 @@ const Card = ({
             height="1000"
             width="1000"
             quality={100}
-            className="min-h-72 max-h-72 w-full object-top object-cover rounded-xl group-hover/card:shadow-xl"
+            className="min-h-52 md:min-h-72 max-h-60 md:max-h-72 w-full object-top object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
