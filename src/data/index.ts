@@ -127,16 +127,6 @@ export const projects = [
     ],
   },
 ];
-function iconExists(icon: any) {
-  try {
-    const img = new Image();
-    img.src = icon;
-    img.onerror = () => false;
-    return true;
-  } catch {
-    return false;
-  }
-}
 
 export const workExperience = [
   {

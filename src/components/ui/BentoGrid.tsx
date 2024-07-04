@@ -104,7 +104,7 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${
+          className={`absolute right-0 -bottom-16 ${
             id === 5 && 'w-full opacity-80'
           } `}
         >
@@ -166,7 +166,7 @@ export const BentoGridItem = ({
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
           {id !== 1 && (
             <div
-              className={`font-sans  lg:text-base text-sm  z-10 max-w-[28ch]`}
+              className={`font-sans  lg:text-base text-sm  z-10 max-w-[20ch]`}
             >
               {description}
             </div>
@@ -175,7 +175,7 @@ export const BentoGridItem = ({
           {/* remove mb-2 mt-2 */}
           {id !== 1 && (
             <div
-              className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+              className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 max-w-[20ch]`}
             >
               {title}
             </div>
@@ -186,7 +186,7 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-3 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
