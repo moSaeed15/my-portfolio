@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import MagicButton from './ui/MagicButton';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/text-generate-effect';
@@ -31,7 +32,10 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10 gap-10 flex-col lg:flex-row items-center">
         <div className="w-3/4  max-w-[400px] md:max-w-[600px] lg:max-w-[800px] mb-10">
-          <img
+          <Image
+            width={800}
+            height={800}
+            priority
             src="/Avatar.webp"
             alt="Hero Image"
             className="w-full h-auto object-cover rounded-lg shadow-lg"
