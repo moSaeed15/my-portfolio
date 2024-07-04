@@ -30,7 +30,7 @@ const Card = ({
       <CardBody className="bg-gray-50 max-h-[650px] relative group/card   dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[rgb(4,7,29)] dark:border-white/[0.2] border-black/[0.1] w-auto md:w-[35rem] lg:w-[30rem] 2xmd:w-[32rem] xl:w-[35rem] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="px-5 text-xl font-bold text-neutral-600 dark:text-white flex items-center justify-between w-full mb-10"
+          className="px-5 text-lg sm:text-xl font-bold text-neutral-600 dark:text-white flex items-center justify-between w-full mb-10"
         >
           <span className="max-w-[17ch] sm:max-w-full">{title}</span>
           <Link href={link} target="__blank">
