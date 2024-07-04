@@ -84,7 +84,7 @@ export const projects = [
     title: 'Audiophile E-commerce Website',
     des: 'Multi-page site using HTML, Sass, and vanilla JS from a Figma design. Includes landing, product, and checkout pages with modals and cart functionality.',
     img: '/audio/home.webp',
-    iconLists: ['/html.svg', '/sass.svg', '/js.svg'],
+    iconLists: ['/html.svg', '/css.svg', '/js.svg', '/sass.svg'],
     link: 'https://github.com/mosaeed15/audiophile',
     websiteLink: 'https://mosaeed15.github.io/audiophile/',
     gallery: [
@@ -127,6 +127,16 @@ export const projects = [
     ],
   },
 ];
+function iconExists(icon: any) {
+  try {
+    const img = new Image();
+    img.src = icon;
+    img.onerror = () => false;
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 export const workExperience = [
   {
@@ -134,7 +144,7 @@ export const workExperience = [
     title: 'Junior Fullstack Developer',
     desc: 'Developed a cybersecurity report generation website using React and Laravel. Created 5+ interactive pages with table views and forms, implementing robust validation. Developed backend endpoints for CRUD operations and integrated the project using GitHub for version control.',
     className: 'md:col-span-2',
-    thumbnail: '/zinad-logo.png',
+    thumbnail: '/zinad.svg',
   },
   {
     id: 2,
