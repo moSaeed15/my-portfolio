@@ -75,7 +75,7 @@ const GalleryModal = ({ gallery }: Props) => {
                 &times;
               </button>
 
-              <div className="grid grid-cols-2 gap-5 mt-10">
+              <div className="grid md:grid-cols-2 gap-5 mt-10">
                 {gallery.map((img, idx) => (
                   <div key={idx} className="relative">
                     {!loaded[idx] && (
