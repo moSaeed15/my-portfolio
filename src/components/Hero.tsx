@@ -31,12 +31,14 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10 gap-10 flex-col lg:flex-row items-center">
-        <div className="w-3/4  max-w-[400px] md:max-w-[600px] lg:max-w-[800px] mb-10">
+        <div className="w-3/4  max-w-[400px] md:max-w-[600px] lg:max-w-[500px] mb-10">
           <Image
-            width={800}
-            height={800}
-            priority
+            width={500}
+            height={500}
+            priority={true}
             src="/Avatar.webp"
+            quality={70}
+            // placeholder="blur"
             alt="Hero Image"
             className="w-full h-auto object-cover rounded-lg shadow-lg"
           />
