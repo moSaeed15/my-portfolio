@@ -7,12 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "preview-email": "email dev -p 3030 --dir src/emails"
+    "partytown": "partytown copylib public/~partytown"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
+    "@builder.io/partytown": "^0.10.2",
     "@radix-ui/react-label": "^2.1.0",
-    "@react-email/components": "^0.0.19",
     "@react-three/drei": "^9.107.0",
     "@react-three/fiber": "^8.16.8",
     "@sentry/nextjs": "^8.11.0",
@@ -25,7 +24,6 @@
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-email": "^2.1.4",
     "react-lottie": "^1.2.4",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
