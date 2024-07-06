@@ -17,7 +17,7 @@ const NavBar = () => {
           </li>
         </a> */}
       </ul>
-      <a href="#contact" className="hidden md:block">
+      <a href="mailto:mohammed.elsaeed1@gmail.com" className="hidden md:block">
         <button className="px-3 py-3 bg-violet-500 rounded-lg">
           Contact Me
         </button>
