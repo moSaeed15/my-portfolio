@@ -1,7 +1,7 @@
 import { socialMedia } from '@/data';
 import { Navigation } from 'lucide-react';
 import MagicButton from './ui/MagicButton';
-import Contact from './Contact';
+// import Contact from './Contact';
 import Link from 'next/link';
 import Image from 'next/image';
 
