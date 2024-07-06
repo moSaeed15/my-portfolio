@@ -1,9 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { CardItem } from './ui/3DCard';
-import ReactPortal from './ReactPortal';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
+const ReactPortal = dynamic(() => import('./ReactPortal'), { ssr: false });
 interface Props {
   gallery: string[];
 }
@@ -62,7 +63,6 @@ const GalleryModal = ({ gallery }: Props) => {
             onClick={() => setShow(false)}
           >
             {/* Invisible layer to ensure the modal is centered */}
-
             {/* Modal Content */}
             <div
               className="relative z-50 bg-[rgb(4,7,29)]  text-black w-full max-w-6xl  p-6 rounded shadow-lg overflow-y-scroll sm:max-h-[80vh] mx-10 sm:mx-4 my-20 sm:my-0"
@@ -74,7 +74,6 @@ const GalleryModal = ({ gallery }: Props) => {
               >
                 &times;
               </button>
-
               <div className="grid md:grid-cols-2 gap-5 mt-10">
                 {gallery.map((img, idx) => (
                   <div key={idx} className="relative">

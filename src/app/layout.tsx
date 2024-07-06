@@ -20,15 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {' '}
-      <Head>
-        <title>My App</title>
-        <Partytown debug={true} forward={['dataLayer.push']} />
-      </Head>
-      <Script
-        src="https://third-party-script.js"
-        type="text/partytown"
-      ></Script>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

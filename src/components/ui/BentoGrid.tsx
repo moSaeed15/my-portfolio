@@ -126,11 +126,11 @@ export const BentoGridItem = ({
 
         {id === 1 && (
           <div className="">
-            <h2
+            <h3
               className={`ml-5 mt-5 font-sans text-lg lg:text-3xl font-bold z-10 max-w-[45ch]`}
             >
               {title} <span className="text-purple">{specialText}</span>
-            </h2>
+            </h3>
             <h2 className={`ml-5 mt-5 font-sans text-lg  font-bold z-10 `}>
               My name is Mohammed El Saeed, a passionate Frontend Engineer
               committed to creating engaging and efficient user interfaces.

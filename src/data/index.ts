@@ -1,5 +1,3 @@
-import { spec } from 'node:test/reporters';
-
 export const navItems = [
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
