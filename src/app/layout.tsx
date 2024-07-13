@@ -21,12 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-35WRVK3WZJ"
-          type="text/partytown"
-          strategy="worker"
-        ></Script>
-        <Script id="google-analytics" type="text/partytown" strategy="worker">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-35WRVK3WZJ"></Script>
+        <Script id="google-analytics">
           {`  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
