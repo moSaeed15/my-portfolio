@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Partytown } from '@builder.io/partytown/react';
 import Head from 'next/head';
 import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,16 +21,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-35WRVK3WZJ"></Script>
-        <Script id="google-analytics">
-          {`  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-35WRVK3WZJ');`}
-        </Script>
-      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -40,6 +31,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-35WRVK3WZJ" />
       </body>
     </html>
   );
