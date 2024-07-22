@@ -10,6 +10,7 @@ export default defineConfig({
     globals: true,
     coverage: {
       include: ['src/**/*'],
+      all: true,
     },
   },
 });
