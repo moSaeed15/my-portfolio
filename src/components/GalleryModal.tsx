@@ -89,7 +89,7 @@ const GalleryModal = ({ gallery }: Props) => {
                       className={`w-full object-cover ${
                         !loaded[idx] ? 'opacity-0' : 'opacity-100'
                       } transition-opacity duration-300`}
-                      onLoadingComplete={() => handleImageLoad(idx)}
+                      onLoad={() => handleImageLoad(idx)}
                     />
                   </div>
                 ))}

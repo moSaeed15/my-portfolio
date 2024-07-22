@@ -1,7 +1,9 @@
 const NavBar = () => {
   return (
-    <div className="flex relative top-0 sm:mx-auto  px-0 sm:px-5 bg-transparent  justify-between py-5 items-center z-40">
-      <h1 className="sm:text-xl font-bold uppercase ">Mohammed El Saeed</h1>
+    <div className="flex relative top-0 sm:mx-auto  px-0 sm:px-5 bg-transparent justify-center  sm:justify-between py-5 items-center z-40">
+      <h1 className=" text-2xl sm:text-xl font-bold uppercase text-center">
+        Mohammed El Saeed
+      </h1>
       <ul className="sm:flex justify-between items-center gap-2 sm:gap-3 sm:text-base hidden ">
         <li className="hover:opacity-50 duration-150 transition-opacity">
           <a href="#projects"> My Projects </a>
