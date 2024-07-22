@@ -4,7 +4,7 @@ const NavBar = () => {
       <h1 className=" text-sm  sm:text-xl font-bold uppercase ">
         Mohammed El Saeed
       </h1>
-      <ul className="flex justify-between items-center gap-2 sm:gap-3 sm:text-base text-sm ">
+      <ul className="flex justify-between items-center gap-2 sm:gap-3 sm:text-base text-xs ">
         <li className="hover:opacity-50 duration-150 transition-opacity">
           <a href="#projects"> My Projects </a>
         </li>
