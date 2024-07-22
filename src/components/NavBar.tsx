@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <div className="flex relative top-0 sm:mx-auto  px-0 sm:px-5 bg-transparent  justify-between py-5 items-center z-40">
-      <h1 className=" text-base  sm:text-xl font-bold uppercase ">
+      <h1 className=" text-sm  sm:text-xl font-bold uppercase ">
         Mohammed El Saeed
       </h1>
       <ul className="flex justify-between items-center gap-2 sm:gap-3 sm:text-base text-sm ">
