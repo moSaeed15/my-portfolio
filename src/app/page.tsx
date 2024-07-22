@@ -3,11 +3,9 @@
 import Grid from '@/components/Grid';
 import Hero from '@/components/Hero';
 import NavBar from '@/components/NavBar';
-// import RecentProjects from '@/components/RecentProjects';
+import RecentProjects from '@/components/RecentProjects';
 import dynamic from 'next/dynamic';
-const RecentProjects = dynamic(() => import('@/components/RecentProjects'), {
-  ssr: false,
-});
+
 const Footer = dynamic(() => import('@/components/Footer'), {
   ssr: false,
 });
