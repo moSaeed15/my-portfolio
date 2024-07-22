@@ -6,6 +6,7 @@ const createWrapperAndAppendBody = (wrapperID: string) => {
   if (!document) return null;
   const wrapperElement = document.createElement('div');
   wrapperElement.setAttribute('id', wrapperID);
+  wrapperElement.setAttribute('data-testid', wrapperID);
   document.body.appendChild(wrapperElement);
   return wrapperElement;
 };

@@ -1,9 +1,7 @@
 import { withSentryConfig } from '@sentry/nextjs';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    nextScriptWorkers: true,
-  },
   images: {
     remotePatterns: [
       {

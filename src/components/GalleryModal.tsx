@@ -60,6 +60,7 @@ const GalleryModal = ({ gallery }: Props) => {
         <ReactPortal wrapperID="react-portal-modal-container">
           <div
             className="fixed inset-0 z-40 bg-black bg-opacity-60 flex sm:items-center sm:justify-center "
+            data-testid="modal"
             onClick={() => setShow(false)}
           >
             {/* Invisible layer to ensure the modal is centered */}
