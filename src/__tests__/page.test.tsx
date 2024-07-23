@@ -1,13 +1,12 @@
-import { expect, test, afterEach } from 'vitest';
-import { cleanup, screen } from '@testing-library/react';
-import { renderComponent } from './setup';
-import 'vitest-canvas-mock';
-import NavBar from '@/components/NavBar';
-import Grid from '@/components/Grid';
 import Home from '@/app/page';
+import Grid from '@/components/Grid';
+import NavBar from '@/components/NavBar';
 import ReactPortal from '@/components/ReactPortal';
 import RecentProjects from '@/components/RecentProjects';
 import { projects } from '@/data';
+import { cleanup, screen } from '@testing-library/react';
+import { afterEach, expect, test } from 'vitest';
+import { renderComponent } from './setup';
 
 afterEach(() => {
   cleanup();

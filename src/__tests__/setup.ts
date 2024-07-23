@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { ReactElement } from 'react';
+import 'vitest-canvas-mock';
 
 type RenderOptions = Parameters<typeof render>[1];
 
