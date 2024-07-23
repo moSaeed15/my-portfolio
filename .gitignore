@@ -39,3 +39,7 @@ next-env.d.ts
 .env.sentry-build-plugin
 
 .react-email/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
