@@ -1,8 +1,6 @@
 # Portfolio Website
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/moSaeed15/my-portfolio/test.yml)
 ![Technology Stack](https://img.shields.io/badge/Technology-Next.js%2C%20TypeScript%2C%20Tailwind%20CSS-blue?style=flat-square)
-![SEO Score](https://img.shields.io/badge/SEO%20Score-100%25-green?style=flat-square)
 
 
 ![Portfolio Banner](https://github.com/user-attachments/assets/d84e091c-2910-46e4-8461-ae9b1a350527)
