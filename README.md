@@ -33,8 +33,7 @@ This portfolio website is built using [Next.js](https://nextjs.org/), [TypeScrip
 ## Showcase
 
 
-
-https://github.com/user-attachments/assets/75f41983-c9fa-4e68-9756-fa4dd8a401fc
+https://github.com/user-attachments/assets/38648462-1017-4885-b56a-c45520b5d1ee
 
 
 
