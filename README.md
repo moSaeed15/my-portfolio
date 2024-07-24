@@ -1,6 +1,18 @@
 # Portfolio Website
 
+![Build Status](https://img.shields.io/github/workflow/status/moSaeed15/my-portfolio/CI?style=flat-square)
+![Test Coverage](https://img.shields.io/codecov/c/github/moSaeed15/my-portfolio?style=flat-square)
+![Technology Stack](https://img.shields.io/badge/Technology-Next.js%2C%20TypeScript%2C%20Tailwind%20CSS-blue?style=flat-square)
+![SEO Score](https://img.shields.io/badge/SEO%20Score-100%25-green?style=flat-square)
+
+
+![Portfolio Banner](https://github.com/user-attachments/assets/d84e091c-2910-46e4-8461-ae9b1a350527)
+
 This portfolio website is built using [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/). It showcases previous experience and projects in an interactive format, optimized for performance and user engagement.
+
+![Next.js Badge](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ## Features
 
@@ -19,6 +31,14 @@ This portfolio website is built using [Next.js](https://nextjs.org/), [TypeScrip
 - **Sentry:** Real-time error tracking and monitoring.
 - **Google Analytics:** User interaction tracking and analytics.
 
+## Showcase
+
+
+
+https://github.com/user-attachments/assets/75f41983-c9fa-4e68-9756-fa4dd8a401fc
+
+
+
 ## Getting Started
 
 To get started with the development server, run:
@@ -26,6 +46,7 @@ To get started with the development server, run:
 ```bash
 npm install
 npm run dev
+
 ```
 
 ### Run Vitest Tests
