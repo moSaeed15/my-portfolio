@@ -35,9 +35,8 @@ const Hero = () => {
             width={500}
             height={500}
             priority={true}
-            src="/Avatar.webp"
-            quality={70}
-            // placeholder="blur"
+            src="/Avatar2.webp"
+            quality={80}
             alt="Hero Image"
             className=" object-cover rounded-lg shadow-lg"
           />
