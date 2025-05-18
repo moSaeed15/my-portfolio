@@ -19,8 +19,8 @@ export default function Home() {
         <NavBar />
         <Hero />
         <Grid />
-        <Experience />
         <RecentProjects />
+        <Experience />
         <Footer />
       </div>
     </main>
