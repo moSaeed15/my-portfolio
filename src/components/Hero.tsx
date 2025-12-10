@@ -38,7 +38,7 @@ const Hero = () => {
             src="/Avatar2.webp"
             quality={80}
             alt="Hero Image"
-            className=" object-cover rounded-lg shadow-lg"
+            className=" object-cover rounded-lg shadow-lg w-full"
           />
         </div>
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center  w-full">
